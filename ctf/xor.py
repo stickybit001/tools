@@ -1,12 +1,16 @@
 import string
 
+blacklist = r'' # i'm here
+payload = "system" # payload convert to XOR
+
 valid = string.punctuation + string.digits
-blacklist = '' # fuzz
+
+if blacklist != '':
+	for b in blacklist:
+		valid = valid.replace(b, '')
 
 def xor(a, b):
 	return chr(ord(a) ^ ord(b))
-
-payload = "system" # payload convert to XOR
 
 flag = 0
 one = ''
