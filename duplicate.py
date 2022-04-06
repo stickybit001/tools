@@ -7,3 +7,5 @@ domains_ = list(set(domains))
 with open('domains.txt', 'w') as f:
 	for x in domains_:
 		f.write(x+'\n')
+
+# cat domains_.txt | httprobe > domains__.txt
