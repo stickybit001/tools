@@ -10,6 +10,9 @@
 
 ![02-08 17_08_03-2f935a94](https://user-images.githubusercontent.com/71699412/217500057-1015606f-7b01-4f9e-854f-c739a1f3cbe5.png)
 
+**Cache key file**:
+
+![02-08 17_08_03-2f935a94](https://user-images.githubusercontent.com/71699412/217500441-f35825ca-d93e-4642-a9f6-cd1cfe686415.png)
 
 **Before hijacking**:
 
