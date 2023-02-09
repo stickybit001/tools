@@ -1,10 +1,16 @@
 # Stealthy Webshell Backdoor
 
+Khi start-up, tất cả file aspx phần server-side code được compiled lại chung thành 1 dll file với từng file cachekey trỏ đến file dll này ==> lấy assembly từ cachekey mem ==> edit cackeyfile trên disk thì phải restart lại server mới có shell do chưa có trong mem sẽ lấy từ disk (tested on iis version 10)
+
+Do đó, để đặt backdoor trong runtime cần chọn một **file aspx chưa được compile**
+
 1. Upload compiled webshell `App_Web_pax0e2so.dll` đến *IIS Server* cache directory, mặc định là: `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\app\hash\hash`
   - `app/hash/hash` là `codegendir` được tính từ script đính kèm
-2. Từ file aspx muốn hijack + script để tìm cache key ==> chỉnh sửa cache key file các thuộc tính thuộc element `preserve` như sau:
+2. Từ file aspx muốn hijack + script để tìm cachekey ==> tạo cachekey file với các thuộc tính thuộc element `preserve` như sau và đặt vào cache folder:
   - `assembly="App_Web_pax0e2so"`
   - `type="ASP.theme_aspx"`
+3. Đặt một innocent file aspx tại vị trí tương ứng với cachekey đã đặt
+4. Innocent aspx file kia sẽ map đến aspx cachekey trên disk và load webshell
 
 **Cache folder**:
 
@@ -21,7 +27,3 @@
 **After hijacking**:
 
 ![After hijacking](https://user-images.githubusercontent.com/71699412/217499295-4083ba0d-05d0-4550-af47-f37303d97c74.png)
-
-
-## notes
-- Tất cả file aspx phần server-side code được compiled lại chung thành 1 dll file ==> lấy assembly từ cachekey mem ==> edit cackey file trên disk thì phải restart lại server
