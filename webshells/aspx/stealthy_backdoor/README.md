@@ -13,13 +13,16 @@ Do đó, để đặt backdoor trong runtime cần chọn một **file aspx chư
   - `type="ASP.theme_aspx"`
 4. Request innocent aspx file kia sẽ load cachekey trên disk do trong mem chưa tồn tại. Từ đây cache trên disk được load vào mem ==> ta có thể xóa innocent file này.
 
+**Webroot**:
+
+![02-09 11_02_45-PUBLISHED](https://user-images.githubusercontent.com/71699412/217715084-cff0e94c-9094-49ba-898a-1f5a3089a3e5.png)
+
 **Cache folder**:
 
-![Cache folder](https://user-images.githubusercontent.com/71699412/217500057-1015606f-7b01-4f9e-854f-c739a1f3cbe5.png)
+![02-09 11_00_31-2f935a94](https://user-images.githubusercontent.com/71699412/217715058-9ac58c48-67ec-4742-a6f5-e8fab67f7cbb.png)
 
 **Cache key file**:
 
-![Cache key](https://user-images.githubusercontent.com/71699412/217500604-d4b87cce-3799-4b5d-adaf-3b7f90adada3.png)
-
+![02-09 11_03_42-C__Windows_Microsoft NET_Framework64_v4 0 30319_Temporary ASP NET Files_root_5e2](https://user-images.githubusercontent.com/71699412/217715091-983ccdfc-e6f4-4b55-a3cb-b39c4869c231.png)
 
 ![After hijacking](https://user-images.githubusercontent.com/71699412/217499295-4083ba0d-05d0-4550-af47-f37303d97c74.png)
