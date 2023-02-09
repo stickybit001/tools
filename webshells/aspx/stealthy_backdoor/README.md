@@ -21,3 +21,7 @@
 **After hijacking**:
 
 ![After hijacking](https://user-images.githubusercontent.com/71699412/217499295-4083ba0d-05d0-4550-af47-f37303d97c74.png)
+
+
+## notes
+- Tất cả file aspx phần server-side code được compiled lại chung thành 1 dll file ==> lấy assembly từ cachekey mem ==> edit cackey file trên disk thì phải restart lại server
