@@ -1,3 +1,5 @@
+// Cần fix lại phần con trỏ - chưa chạy đc, sẽ update sau :)
+
 using System.Globalization;
 using System.Runtime.CompilerServices;
 
