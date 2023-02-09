@@ -25,4 +25,4 @@ Do đó, để đặt backdoor trong runtime cần chọn một **file aspx chư
 
 ![02-09 11_03_42-C__Windows_Microsoft NET_Framework64_v4 0 30319_Temporary ASP NET Files_root_5e2](https://user-images.githubusercontent.com/71699412/217715091-983ccdfc-e6f4-4b55-a3cb-b39c4869c231.png)
 
-![After hijacking](https://user-images.githubusercontent.com/71699412/217499295-4083ba0d-05d0-4550-af47-f37303d97c74.png)
+![02-09 11_06_52-localhost_theme aspx](https://user-images.githubusercontent.com/71699412/217715337-0d0567f2-7ee8-4158-aaff-708956b12cab.png)
